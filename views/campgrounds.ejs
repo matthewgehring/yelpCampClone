@@ -1,0 +1,17 @@
+<% include partials/header.ejs %>
+<div>
+    <header class="jumbotron">
+        
+        <h1>This is the 50k campgrounds page</h1>
+    
+    </header>
+
+</div>
+<% campgrounds.forEach(function(campground){%>
+    <div>
+        <h4></h4><%=campground.name%></h4>
+        <img src="<%= campground.image %>">
+    </div>
+<% }); %>
+
+<% include partials/footer.ejs %>
